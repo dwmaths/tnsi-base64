@@ -80,6 +80,10 @@ echo -n "La raclette est moelleuse !" | openssl enc -base64
 
 et on obtient **TGEgcmFjbGV0dGUgZXN0IG1vZWxsZXVzZSAh**.  
 
+!!! info "Important"
+
+    L'option `-n` permet de ne pas prendre en compte le retour chariot (lorsqu'on valide avec la touche Entrer).
+
 Pour décoder, un texte encodé avec la base 64, on ajoute l'option `-d` et on enlève l'option `-n` :
 
 ``` bash title="Utilisation d'OpenSSL dans un terminal"
@@ -186,9 +190,9 @@ Nous sommes à la recherche d'une image secrète.
 
 Voici les différentes étapes réalisées sur cette image :
 
-    * Elle a d'abord été encodée en base 64 ;
-    * On a encodé un mot de passe en base 64 et on a obtenu **UmFjbGV0dGU=** ;
-    * On a chiffré l'image encodée avec **Blowfish** et le mot de passe (en clair) ;
+* Elle a d'abord été encodée en base 64 ;
+* On a encodé un mot de passe en base 64 et on a obtenu **UmFjbGV0dGU=** ;
+* On a chiffré l'image encodée avec **Blowfish** et le mot de passe (en clair) ;
 
 !!! question
 
