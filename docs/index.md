@@ -191,8 +191,7 @@ Nous sommes à la recherche d'une image secrète.
 Voici les différentes étapes réalisées sur cette image :
 
 * Elle a d'abord été encodée en base 64 ;
-* On a encodé un mot de passe en base 64 et on a obtenu **UmFjbGV0dGU=** ;
-* On a chiffré l'image encodée avec **Blowfish** et le mot de passe (en clair) ;
+* On a chiffré l'image encodée avec **Blowfish** et le mot de passe utilisé est **UmFjbGV0dGU=** (à décoder avant d'être utilisé) ;
 
 !!! question
 
